@@ -6,7 +6,6 @@ const SpaNavBar = () => {
   const navigate = useNavigate();
 
   const goTo = (direction) => {
-    console.log(direction);
     navigate(`/${direction}`);
   };
 
