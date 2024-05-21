@@ -1,9 +1,9 @@
 import React from 'react';
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
 import './spa-layout.css';
-import SpaHeader from "../SpaHeader/SpaHeader";
-import SpaNavBar from "../SpaNavBar/SpaNavBar";
+import SpaHeader from '../SpaHeader/SpaHeader';
+import SpaNavBar from '../SpaNavBar/SpaNavBar';
 
 const SpaLayout = () => {
   return (

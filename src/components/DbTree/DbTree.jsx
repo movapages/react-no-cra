@@ -1,7 +1,15 @@
 import React from 'react';
+import {Splitter} from '../Splitter/Splitter';
+
+const dbTreeProps = {
+  left: 'DB Tree',
+  right: 'DB Editor',
+}
 
 const DbTree = () => {
-  return <h4>Db Tree View</h4>
+  return (<>
+    <Splitter props={dbTreeProps} />
+  </>)
 };
 
 export default DbTree;

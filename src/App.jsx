@@ -1,13 +1,13 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import SpaLayout from "./components/SpaLayout/SpaLayout";
+import SpaLayout from './components/SpaLayout/SpaLayout';
 
 import './spa.css';
-import SnapshotSelector from "./components/SnapshotSelector/SnapshotSelector";
-import DbTree from "./components/DbTree/DbTree";
-import CronJobTree from "./components/CronJobTree/CronJobTree";
-import AppTree from "./components/AppTree/AppTree";
+import SnapshotSelector from './components/SnapshotSelector/SnapshotSelector';
+import DbTree from './components/DbTree/DbTree';
+import CronJobTree from './components/CronJobTree/CronJobTree';
+import AppTree from './components/AppTree/AppTree';
 
 export const routerConfig = [
   {
@@ -17,22 +17,22 @@ export const routerConfig = [
       {
         index: true,
         element: <SnapshotSelector />,
-        name: "Snapshots",
+        name: 'Snapshots',
       },
       {
         path: '/database',
         element: <DbTree />,
-        name: "Databases",
+        name: 'Databases',
       },
       {
         path: '/application',
         element: <AppTree />,
-        name: "Applications",
+        name: 'Applications',
       },
       {
         path: '/cronjob',
         element: <CronJobTree />,
-        name: "CronJobs",
+        name: 'CronJobs',
       }
     ]
   }
